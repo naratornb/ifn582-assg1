@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Greener Groceries</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark brand_color_set sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Greener Groceries</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
+                    aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse show" id="navbarDark">
+                    <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="summary.html">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="checkout.html">Checkout</a>
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light buttonstyle" type="submit"
+                            style="border: 1px solid white; padding: 5px;">Search</button>
+                    </form> -->
+                    <form class="d-flex">
+                        <!-- Search box for product name or keyword -->
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light buttonstyle" type="submit"
+                            style="border: 1px solid white; padding: 5px;">Search</button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Landing Page -->
+
+    <div class="container-fluid" style="padding:15px;">
+        <!-- Category Filter Dropdown -->
+        <div class="text-center" style="margin-bottom: 20px;">
+            <label for="categoryFilter" class="form-label">Filter by Category:</label>
+            <select id="categoryFilter" class="form-select" style="display:inline-block; max-width: 200px;">
+                <option value="all">All</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="noodles">Noodles</option>
+                <option value="fruits">Fruits</option>
+            </select>
+        </div>
+
+
+
+        <div class="row justify-content-center cardholder" style="margin-top:50px;padding:15px;">
+
+            <div class="card item_card" data-category="vegetables">
+                <img src="img/item1.jpg" class="card-img-top img-thumbnail" alt="card-group-image">
+                <div class="card-body">
+                    <h5 class="card-title">Tomato</h5>
+                    <p class="card-text">Price: $10.00</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="brisbane_tours.html"><button type="button"
+                            class="btn btn-outline-success buttonstyle stretched-link">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="card item_card" data-category="vegetables">
+                <img src="img/item2.jpg" class="card-img-top img-thumbnail" alt="card-group-image">
+                <div class="card-body">
+                    <h5 class="card-title">Asparagus</h5>
+                    <p class="card-text">Price: $20.00</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <button type="button" class="btn btn-outline-success buttonstyle">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card item_card" data-category="noodles">
+                <img src="img/item3.jpg" class="card-img-top img-thumbnail" alt="card-group-image">
+                <div class="card-body">
+                    <h5 class="card-title">Pasta</h5>
+                    <p class="card-text">Price: $30.00</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <button type="button" class="btn btn-outline-success buttonstyle">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card item_card" data-category="fruits">
+                <img src="img/item4.jpg" class="card-img-top img-thumbnail" alt="card-group-image">
+                <div class="card-body">
+                    <h5 class="card-title">Pear</h5>
+                    <p class="card-text">Price: $5.00</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <button type="button" class="btn btn-outline-success buttonstyle">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
