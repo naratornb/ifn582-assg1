@@ -78,3 +78,7 @@ h1 {
 .card-img-top{
     object-fit: fill;
 }
+
+.carousel-item img {
+    filter: brightness(60%);
+}
